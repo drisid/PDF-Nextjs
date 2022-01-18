@@ -1,35 +1,3 @@
-/*import { useState } from "react";
-// import default react-pdf entry
-import { Document, Page, pdfjs } from "react-pdf";
-// import pdf worker as a url, see `next.config.js` and `pdf-worker.js`
-
-pdfjs.GlobalWorkerOptions.workerSrc = "https://unpkg.com/pdfjs-dist/2.12.313/build/pdf.worker.min.js";
-
-function PDFViewer() {
-  const [file, setFile] = useState("./pdf_display.pdf");
-  const [numPages, setNumPages] = useState(null);
-
-  /*function onFileChange(event) {
-    setFile(event.target.files[0]);
-  }
-
-
-  function onDocumentLoadSuccess({ numPages: nextNumPages }) {
-    setNumPages(nextNumPages);
-  }
-
- return (
-     <div>
-        <Document file = {file}  onLoadSuccess={onDocumentLoadSuccess}>
-           
-        </Document>
-      </div>
-
- );
-
- }
- export default PDFViewer*/
-
 import React, { useEffect, useRef, useState } from "react";
 import * as PDFJS from "pdfjs-dist/build/pdf";
 PDFJS.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS.version}/pdf.worker.min.js`;
